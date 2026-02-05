@@ -33,7 +33,7 @@ Follow these rules:
 - Always output ONLY the required fields for the task. - Do not include explanations. - Do not add extra text.'''
 user3="Task: MSS_TO_ODOR\n"
 
-def generate_MSS_to_odor(name,con,model_epo,tokenizer,index):  #testデータの分子nameを濃度conについて一回出力　モデルmodelについて出力  ##MSS→分子よう
+def generate_MSS_to_odor(name,con,model_epo,tokenizer,index):  #testデータの分子nameを濃度conについて一回出力　
     prompt_list1=[]
     label=[]
     for rece in receptors:
@@ -60,7 +60,7 @@ def generate_MSS_to_odor(name,con,model_epo,tokenizer,index):  #testデータの
         print(answer)
     return
 
-def steps_generate(adaptor):###MSS→分子の出力用
+def steps_generate(adaptor):
     model, tokenizer = FastLanguageModel.from_pretrained(
     model_name = "unsloth/gemma-3-4b-it-unsloth-bnb-4bit", # Change any model you want to use
     max_seq_length = 1024,

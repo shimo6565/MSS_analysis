@@ -16,7 +16,6 @@ def to_text(example):
     return {"text": text}
 
 # More models at https://huggingface.co/unsloth
-local_model="/home/tshimoshige/models"
 ### モデルのダウンロード
 model, tokenizer = FastLanguageModel.from_pretrained(
     model_name = "unsloth/gemma-3-4b-it-unsloth-bnb-4bit", # Change any model you want to use

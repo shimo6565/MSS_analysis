@@ -56,7 +56,7 @@ Prepare a text file that contains molecule concentration, receptor material, and
 Run the following command to perform odor prediction:
 
 ```bash
-python gene_open.py --adapter_path ./artifacts/adapter \
+python sample_code/gene_open.py --adapter_path ./adapter_weight \
                     --data_path ./data/sample_data.txt
 
 ```

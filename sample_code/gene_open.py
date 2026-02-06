@@ -31,7 +31,7 @@ def generate_MSS_to_odor(txt_path,model,tokenizer):
             line = f.readline().strip()
             prompt1=make_prompt(system,line,"")
             text1=tokenizer.apply_chat_template(prompt1["messages"], tokenize=False,add_generation_prompt=True,)
-    inputs = tokenizer(text1, return_tensors="pt", add_special_tokens=False, padding=True).to(model.device)
+    inputs = tokenizer(text=[text1], return_tensors="pt", add_special_tokens=False, padding=True).to(model.device)
     with torch.no_grad():
         outputs = model.generate(
             **inputs,

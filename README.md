@@ -54,6 +54,7 @@ Prepare a text file that contains MSS measurement data.
 Example:
 
 data/sample_data.txt
+
 2. Run inference
 
 Run the following command to perform odor prediction:
@@ -68,7 +69,7 @@ Molecule concentration
 Receptor material
 
 Signal data
-
+```
 The --adapter_path argument specifies the directory containing the fine-tuned LoRA adapter.
 
 

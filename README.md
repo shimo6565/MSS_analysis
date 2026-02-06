@@ -28,7 +28,7 @@ MSS (Membrane-type Surface Stress Sensor) data and generating odor descriptions.
   - Receptor material  
   - MSS signal data  
 
-  This file consists of fictitious (synthetic) data for demonstration purposes.
+  This file consists of synthetic data for demonstration purposes.
 
 ---
 

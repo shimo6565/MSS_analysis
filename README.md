@@ -49,11 +49,7 @@ pip install torch unsloth peft transformers datasets
 ```
 ## How to Run
 1. Prepare input data
-Prepare a text file that contains MSS measurement data.
-
-Example:
-
-data/sample_data.txt
+Prepare a text file that contains molecule concentration, receptor material, and MSS measurement data.
 
 2. Run inference
 
@@ -62,13 +58,7 @@ Run the following command to perform odor prediction:
 ```bash
 python gene_open.py --adapter_path ./artifacts/adapter \
                     --data_path ./data/sample_data.txt
-The --data_path argument specifies the path to a text file that contains MSS measurement data, including:
 
-Molecule concentration
-
-Receptor material
-
-Signal data
 ```
 The --adapter_path argument specifies the directory containing the fine-tuned LoRA adapter.
 

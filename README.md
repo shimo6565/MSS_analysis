@@ -22,7 +22,7 @@ MSS (Membrane-type Surface Stress Sensor) data and generating odor descriptions.
 
 ## Data
 
-- `data/sample_data.txt`  
+- `data/Sample_data.txt`  
   Contains information about:
   - Molecule concentration  
   - Receptor material  
@@ -54,10 +54,13 @@ Example:
 
 data/sample_data.txt
 2. Run inference
-Execute the following command:
 
-python gene_open.py --data_path ./data/sample_data.txt
-The data_path argument specifies the path to a text file that contains:
+Run the following command to perform odor prediction:
+
+```bash
+python gene_open.py --adapter_path ./artifacts/adapter \
+                    --data_path ./data/sample_data.txt
+The --data_path argument specifies the path to a text file that contains MSS measurement data, including:
 
 Molecule concentration
 
@@ -65,13 +68,8 @@ Receptor material
 
 Signal data
 
-Notes
-The included sample data is synthetic and does not contain real experimental data.
+The --adapter_path argument specifies the directory containing the fine-tuned LoRA adapter.
 
-This repository is intended for research and demonstration purposes.
-
-Author
-Takeshi Shimoshige
 
 
 
